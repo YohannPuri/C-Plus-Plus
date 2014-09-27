@@ -38,7 +38,8 @@ clrscr();					// Clearing the screen
     // Testing if the number is completely divisible by any integer between 2 and itself
     
 
-	if (num%i==0)			// Making flag = 1 if the number is divisible		 flag++;
+	if (num%i==0)			// Making flag = 1 if the number is divisible 
+	flag++;
    }
    if(flag!=0)
     cout<<endl<<"The result is 1";	// Printing 1 if the number was divisible by
