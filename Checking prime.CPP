@@ -2,7 +2,8 @@
 
 		Copyright (c) 2012. Yohann Puri. All rights reserved.
 
-		The following program checks if a number is prime or not by checking if 		the number entered when divided by any number between 2 and itself gives a 
+		The following program checks if a number is prime or not by checking if 
+		the number entered when divided by any number between 2 and itself gives a 
 		remainder of 0.If it does for any number then it is divisible by that 
 		number and hence not prime. Otherwise if nothing returns a remainder of 0 
 		then the number entered by the user is prime.
@@ -16,10 +17,11 @@ void check(int);				// Function declaration for check
 
 void main()
 {
-clrscr();											// Clearing the screen
- int num;											// Integer variable for user input
- cout<<"If 1 is returned the number is not a prime"<<endl
- <<"If 0 is returned number is a prime ";
+clrscr();					// Clearing the screen
+ int num;					// Integer variable for user input
+ 
+	cout<<"If 1 is returned the number is not a prime"<<endl
+	    <<"If 0 is returned number is a prime ";
  cout<<endl<<"Enter number ";
  cin>>num;
  check(num);					// Function call
