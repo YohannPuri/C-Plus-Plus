@@ -4,7 +4,8 @@
 	
 	
 	This program prints the fibonacci sequence unto a number specified by the user
-	It does this by adding i+j to find the next term in the sequence and then making 	that the new j and making the old value of j the new i. In the process the old 		value of i is discarded.
+	It does this by adding i+j to find the next term in the sequence and then making 
+	that the new j and making the old value of j the new i. In the process the old 		value of i is discarded.
 	As soon as the number entered by the user is exceeded the loop stops and the
 	program stops printing the sequence.
 
