@@ -1,5 +1,7 @@
 /*
 
+Copyright (c) 2012. Yohann Puri. All rights reserved.
+
 The following program builds a basic calculator. The user can choose an operation amongst 
 addition, subtraction, multiplication and division. The program performs the operation
 the user wants and then prints the result.
