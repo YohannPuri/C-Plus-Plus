@@ -1,3 +1,12 @@
+/*
+
+The following program builds a basic calculator. The user can choose an operation amongst 
+addition, subtraction, multiplication and division. The program performs the operation
+the user wants and then prints the result.
+
+*/
+
+
 #include<iostream.h>				// Including header files required
 #include<conio.h>
 #include<stdio.h>
@@ -11,11 +20,11 @@ clrscr();							// Clear the screen
  
  
  cout<<"Enter operand 1 ";			// Printing the string to the screen to ask for input
- 	cin>>op1;							// Getting number into op1
+ 	cin>>op1;						// Getting number into op1
  cout<<endl<<"Enter operand 2 ";	// Printing the string to the screen to ask for input
- 	cin>>op2;							// getting number into op2
+ 	cin>>op2;						// getting number into op2
  cout<<endl<<"Enter operator ";		// Asking the user to specify the operator to use
- 	cin>>op;							// Storing users response in op
+ 	cin>>op;						// Storing users response in op
  operate(op1,op2,op);				// Calling the function 'operate'
  
  // The following is used to stop output screen from disappearing unless a key is pressed
@@ -52,6 +61,10 @@ clrscr();							// Clear the screen
     		{
      			res=op1/op2;
      		}
+    }
+    else
+    {
+    	cout<<endl<<"Invalid Operation Requested"<<endl;
     }
 cout<<"The result is "<<res;				// Printing the result
 
