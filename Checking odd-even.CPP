@@ -2,7 +2,8 @@
 
 		Copyright (c) 2012. Yohann Puri. All rights reserved.		
 
-		The following program checks if a number is odd or even by using the 			modulus function. We build a function named 'oddoeven' to do this task.
+		The following program checks if a number is odd or even by using the 
+		modulus function. We build a function named 'oddoeven' to do this task.
 */
 
 
