@@ -132,18 +132,40 @@ void StudentMenu();
 
 void main()
 {
- int gd=DETECT,gm=DETECT;
- initgraph(&gd,&gm,"C:\\TC\\BGI");
- setbkcolor(BLUE);
- settextstyle(2,0,7);
- setcolor(2);
- outtextxy(10,50,"WELCOME TO OUR CLASS TEST MANAGEMENT SYSTEM");
+ 
+int gd=DETECT,gm=DETECT;
+initgraph(&gd,&gm,"C:\\TC\\BGI");
+
+/*
+	gd -> graph driver
+	gm -> graph mode
+	
+	The “DETECT” asks the initgraph function to auto detect the attached video adapter
+	at run time and pick the corresponding driver.
+	The string (3rd argument) is the path to the driver.
+
+
+*/
+
+			
+ 
+ setbkcolor(BLUE);							// Set background color to Blue
+ 
+ settextstyle(2,0,7);							// Changing the font, direction and character size of the text
+ setcolor(2);								// Changing the current drawing color
+ 
+
+ outtextxy(10,50,"WELCOME TO THE CLASS TEST MANAGEMENT SYSTEM");	// Displaying the strings at the specified x and y coordinates on the screen
  outtextxy(10,150,"MADE BY : ");
  outtextxy(10,180,"YOHANN PURI");
- getch();
- closegraph();
- clrscr();
- int DECIDE;
+ 
+ getch();								// Get one character press
+ 
+ closegraph();								// Deallocate memory allocated by graphics system and close graphics mode
+ clrscr();								// Clear the screen
+ 
+ int DECIDE;								
+ 
  DECIDE=LD.Login();
  if(DECIDE==2)
   TeacherMenu();
