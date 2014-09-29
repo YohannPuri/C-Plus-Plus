@@ -1,18 +1,37 @@
 /* 
-This classroom management system was built as part of a
-project during grade 12 at Mayoor School, Ajmer, Rajasthan, India
-The task given was to build anything using file handling code.
+	Copyright (c) 2012. Yohann Puri.
+
+	This classroom management system was built as part of a 
+	project during grade 12 at Mayoor School, Ajmer, Rajasthan, India
+	The task given was to build anything using file handling code.
 */
 
-#include<iostream.h>
-#include<conio.h>
-#include<stdio.h>
-#include<graphics.h>
-#include<fstream.h>
-#include<string.h>
-#include<stdlib.h>
-#include<process.h>
-#include<dos.h>
+
+//Adding the necessary Header files
+
+#include<iostream.h>				// The class helps perform input and output operations
+/*
+
+Quick Note on iostream.h
+This is a non standard header and does not exist on all platforms.
+The commented line #include<iostream> can be used when the platform is changed.
+
+*/
+
+#include<conio.h>				// For Console Input Output
+#include<stdio.h>				// For input - output. Uses streams to operate with physical devices
+#include<graphics.h>				// Provides access to a simple graphics library to draw basic shapes
+#include<fstream.h>				// Input - Output stream class to operate on files and facilitate file handling
+#include<string.h>				// Defines several functions to manipulate strings
+#include<stdlib.h>				// Defines general purpose functions
+#include<process.h>				// Contains declarations and macros used in working with threads and processes.
+#include<dos.h>					// Contains functions for handling interrupts, sound, date, time, etc.
+
+//The dos.h header file is Borland specific
+
+
+
+
 struct Current
 {
  char UserID[20];
@@ -21,6 +40,8 @@ struct Current
 
 
 // ----------------------------------------------
+
+
 class UserDetails
 {
  char Username[20];
@@ -49,7 +70,12 @@ class Test
   void TestDeletor();
   void TakeTest();
 }A;
+
+
 //-----------------------------------------------
+
+
+
 class Result
 {
 public:
@@ -59,10 +85,17 @@ public:
 
  void display();
 }B;
+
+
 //------------------------------------------
+
+
 int Calculate();
 void TeacherMenu();
 void StudentMenu();
+
+
+
 //--------------------------------------------------
 
 
