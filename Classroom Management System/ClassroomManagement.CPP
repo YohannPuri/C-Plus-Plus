@@ -8,16 +8,22 @@
 
 
 
-//Adding the necessary Header files
 
-#include<iostream.h>				// The class helps perform input and output operations
+//——————————————————————— Adding the necessary Header files————————————————————————
+
+
+
+#include<iostream.h>		// Helps perform input and output operations
+
+
 /*
 
-Quick Note on iostream.h
+QUICK NOTE on iostream.h
 This is a non standard header and does not exist on all platforms.
-The commented line #include<iostream> can be used when the platform is changed.
+The line #include<iostream> can be used when the platform is changed.
 
 */
+
 
 #include<conio.h>				// For Console Input Output
 #include<stdio.h>				// For input - output. Uses streams to operate with physical devices
@@ -26,21 +32,19 @@ The commented line #include<iostream> can be used when the platform is changed.
 #include<string.h>				// Defines several functions to manipulate strings
 #include<stdlib.h>				// Defines general purpose functions
 #include<process.h>				// Contains declarations and macros used in working with threads and processes.
-#include<dos.h>					// Contains functions for handling interrupts, sound, date, time, etc.
+#include<dos.h>					// Contains functions for handling 
+						// interrupts, sound, date, time, etc.
 
-//The dos.h header file is Borland specific
+// QUICK NOTE - The dos.h header file is Borland specific
 
 
-
+//—————————————————————— STRUCTURE AND CLASS DECLARATIONS ——————————————————————
 
 struct Current
 {
  char UserID[20];
  int TestOnFile;
 }CU;
-
-
-// ----------------------------------------------
 
 
 class UserDetails
@@ -59,7 +63,7 @@ class UserDetails
  void ShowData();
 }LD,LD1;
 
-//------------------------------------------------
+
 class Test
 {
  char Ques[200];
@@ -73,7 +77,6 @@ class Test
 }A;
 
 
-//-----------------------------------------------
 
 
 
@@ -88,16 +91,43 @@ public:
 }B;
 
 
-//------------------------------------------
+//—————————————————————— FUNCTION DECLARATIONS ——————————————————————
 
 
 int Calculate();
-void TeacherMenu();
+
+/*
+
+	This is the function that is called to calculate the number of tests
+	on file. It first calculates the number of questions and then divides
+	that by 10 since there are 10 questions on each test.
+
+*/
+
+
+
+void TeacherMenu();			
+
+/*
+
+ 	This is the function that is called if a teacher logs in.
+ 	It supplies the menu that teachers see.
+
+
+*/
+
 void StudentMenu();
 
+/*
+
+ 	This is the function that is called if a student logs in.
+ 	It supplies the menu that students see.
 
 
-//--------------------------------------------------
+*/
+
+
+//—————————————————————— Main Function ——————————————————————
 
 
 void main()
@@ -846,11 +876,13 @@ int Calculate()
  int count=0;
  ifstream fin;
  fin.open("C:\\TC\\TestDir.dat",ios::in);
- while(!fin.eof())
+ while(!fin.eof())			// While the end of File character is not reached
  {
   fin.read((char*)&A,sizeof(A));
   count++;
  }
+ 
+fin.close();
  count=count/10;
  return count;
 }
